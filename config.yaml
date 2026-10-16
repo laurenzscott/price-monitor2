@@ -1,0 +1,39 @@
+# Which shop to watch, and what counts as a change.
+# Everything in this file is safe to edit. Nothing else needs touching.
+
+site_name: "BerryBase – Raspberry Pi Boards"
+
+# The complete "Raspberry Pi Boards" category of berrybase.de (Shopware 6).
+# 18 products on a single page as of 2026-10-16; all of them fit on one page,
+# so one request per run covers the whole category.
+# {page} is replaced with 1 .. max_pages. Raise max_pages only if the
+# category grows past ~35 products (that is when the shop starts paginating).
+#
+# Checked 2026-10-16: robots.txt allows this path (it only disallows
+# */account/, */checkout/, */widgets/, */navigation/, */page/closed/,
+# /product-datasheet/*/create and /wishlist); the shop's terms contain no
+# clause about automated access.
+start_url: "https://www.berrybase.de/raspberry-pi/raspberry-pi-computer/boards/?p={page}"
+max_pages: 1
+
+# How to find things on the page. "css" for the text, "css@attr" for an attribute.
+# Shopware 6 standard product box, verified against the live HTML on 2026-10-16.
+selectors:
+  item: "div.product-box"              # the card around one product
+  title: "a.product-name@title"        # full product name
+  price: ".product-price"              # current price comes first, e.g. "19,90 € 22,90 € (13.1% gespart)"
+  availability: ".delivery-information" # "Sofort verfügbar · 100+ Stück · 1-3 Tage" / "Artikel aktuell nicht lieferbar"
+  link: "a.product-name@href"          # absolute product URL, used as the stable key
+
+alerts:
+  # Ignore movements smaller than this, so rounding does not wake you up.
+  # 0.5 % still catches a 10-cent change on a 12,50 € board.
+  price_change_min_percent: 0.5
+  notify_new_items: true
+  notify_removed_items: true
+
+email:
+  # Leave empty. The recipient comes from the MAIL_TO repository secret.
+  # If you put an address here, it would override MAIL_TO.
+  to: ""
+  subject_prefix: "[Price monitor]"

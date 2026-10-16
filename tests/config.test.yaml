@@ -1,0 +1,16 @@
+site_name: "Test Shop"
+start_url: "file://fixtures"
+max_pages: 1
+selectors:
+  item: "article.product"
+  title: "h3 a@title"
+  price: "p.price"
+  availability: "p.stock"
+  link: "h3 a@href"
+alerts:
+  price_change_min_percent: 0.5
+  notify_new_items: true
+  notify_removed_items: true
+email:
+  to: "test@example.com"
+  subject_prefix: "[Test]"
