@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-10-17T05:26:22+00:00",
+  "checked_at": "2026-10-18T05:26:38+00:00",
   "count": 18,
   "items": {
     "https://www.berrybase.de/raspberry-pi-3-modell-a": {
-      "in_stock": false,
+      "in_stock": true,
       "key": "https://www.berrybase.de/raspberry-pi-3-modell-a",
       "price": "26.90",
       "title": "Raspberry Pi 3 Modell A+",
@@ -110,7 +110,7 @@
     "https://www.berrybase.de/raspberry-pi-zero-v1.3": {
       "in_stock": true,
       "key": "https://www.berrybase.de/raspberry-pi-zero-v1.3",
-      "price": "12.50",
+      "price": "13.50",
       "title": "Raspberry Pi Zero v1.3",
       "url": "https://www.berrybase.de/raspberry-pi-zero-v1.3"
     },
