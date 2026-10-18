@@ -10,6 +10,37 @@ it keeps running.
 
 ---
 
+## The live copy in this repository
+
+This repository is not a demo. It watches a real shop every morning at
+05:04 UTC: **BerryBase, category Raspberry Pi boards** (18 products), one
+request per run, identified as `price-monitor/1.0 (small personal project)`.
+
+- [`data/snapshot.json`](data/snapshot.json) - the state after the last run
+- [`data/history.csv`](data/history.csv) - every change it has detected
+- **Actions** tab - the log of every run
+
+The first changes it caught, on 18 October 2026:
+
+```
+price  Raspberry Pi Zero v1.3     12.50 -> 13.50
+stock  Raspberry Pi 3 Modell A+   out of stock -> in stock
+stock  Raspberry Pi 3 Modell A+   in stock -> out of stock   (same day, evening)
+```
+
+On 16 and 17 October nothing moved, so no e-mail was sent.
+
+## What a client gets
+
+- this monitor, set up for the shop pages they choose
+- an e-mail only when a price, a stock state or a listing changes, and a
+  warning instead of silence when the shop redesigns its page
+- the full code and a plain-language setup document
+- for the first 30 days I run it; after that it moves into the client's own
+  GitHub account on the free tier, or I keep running it as a small monthly order
+
+---
+
 ## What it watches
 
 | | |
