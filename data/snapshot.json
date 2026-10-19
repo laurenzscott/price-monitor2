@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T19:34:46+00:00",
+  "checked_at": "2026-10-19T05:32:04+00:00",
   "count": 18,
   "items": {
     "https://www.berrybase.de/raspberry-pi-3-modell-a": {
@@ -80,7 +80,7 @@
       "url": "https://www.berrybase.de/raspberry-pi-5-2gb-ram"
     },
     "https://www.berrybase.de/raspberry-pi-5-4gb-ram": {
-      "in_stock": false,
+      "in_stock": true,
       "key": "https://www.berrybase.de/raspberry-pi-5-4gb-ram",
       "price": "118.50",
       "title": "Raspberry Pi 5, 4GB RAM",
