@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-23T05:30:09+00:00",
+  "checked_at": "2026-10-24T05:28:02+00:00",
   "count": 18,
   "items": {
     "https://www.berrybase.de/raspberry-pi-3-modell-a": {
@@ -24,7 +24,7 @@
       "url": "https://www.berrybase.de/raspberry-pi-3-modell-b-019234a35a71713a8849da83570ab3b3"
     },
     "https://www.berrybase.de/raspberry-pi-4-computer-modell-b-1gb-ram": {
-      "in_stock": false,
+      "in_stock": true,
       "key": "https://www.berrybase.de/raspberry-pi-4-computer-modell-b-1gb-ram",
       "price": "39.90",
       "title": "Raspberry Pi 4 Computer Modell B, 1GB RAM",
