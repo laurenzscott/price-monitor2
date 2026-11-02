@@ -1,5 +1,9 @@
 # Price monitor
 
+[![Price monitor](https://github.com/laurenzscott/price-monitor2/actions/workflows/monitor.yml/badge.svg)](https://github.com/laurenzscott/price-monitor2/actions/workflows/monitor.yml)
+
+![The price monitor's change history: every price and stock change with a link to the shop page](docs/01-price-monitor.png)
+
 Checks the listing pages you choose once a day, compares the result against the
 previous run, and emails you **only when something actually changed**. On a day
 when nothing moved, no email arrives.
