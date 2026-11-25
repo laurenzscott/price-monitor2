@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T15:41:50+00:00",
+  "checked_at": "2026-11-25T15:26:49+00:00",
   "count": 18,
   "items": {
     "https://www.berrybase.de/raspberry-pi-3-modell-a": {
@@ -52,7 +52,7 @@
       "url": "https://www.berrybase.de/raspberry-pi-4-computer-modell-b-4gb-ram"
     },
     "https://www.berrybase.de/raspberry-pi-4-computer-modell-b-8gb-ram": {
-      "in_stock": true,
+      "in_stock": false,
       "key": "https://www.berrybase.de/raspberry-pi-4-computer-modell-b-8gb-ram",
       "price": "168.90",
       "title": "Raspberry Pi 4 Computer Modell B, 8GB RAM",
